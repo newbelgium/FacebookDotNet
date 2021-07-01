@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package >
+	<metadata>
+		<id>$id$</id>
+		<version>0.0.1</version>
+		<title>$title$</title>
+		<authors>New Belgium Brewing Company</authors>
+		<requireLicenseAcceptance>false</requireLicenseAcceptance>
+		<license type="expression">MIT</license>
+		<projectUrl>https://github.com/newbelgium/</projectUrl>
+		<repository type="git" url="https://github.com/newbelgium/FacebookDotNet"  />
+		<description>Basic client for Facebook Graph API</description>
+		<releaseNotes></releaseNotes>
+		<copyright>$copyright$</copyright>
+		<tags>Facebook</tags>
+	</metadata>
+</package>
