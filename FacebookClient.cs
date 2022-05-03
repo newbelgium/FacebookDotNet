@@ -4,7 +4,6 @@ using System.Net.Http;
 using System.Net.Http.Headers;
 using System.Text;
 using System.Threading.Tasks;
-using System.Web;
 
 namespace FacebookDotNet
 {
@@ -34,7 +33,7 @@ namespace FacebookDotNet
             var response = await _httpClient.GetAsync($"{endpoint}?access_token={accessToken}&{args}");
             if (!response.IsSuccessStatusCode)
             {
-                throw new HttpException((int)response.StatusCode, response.ReasonPhrase + " " + await response.Content.ReadAsStringAsync());
+                throw new Exception($"{(int)response.StatusCode} {response.ReasonPhrase} {await response.Content.ReadAsStringAsync()}");
             }
 
             var result = await response.Content.ReadAsStringAsync();
